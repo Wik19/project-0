@@ -60,8 +60,8 @@ all: main-build
 main-build: project-0-nucl.elf secondary-outputs
 
 # Tool invocations
-project-0-nucl.elf project-0-nucl.map: $(OBJS) $(USER_OBJS) /home/marco/STM32CubeIDE/workspace_1.19.0/project-0-nucl/STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "project-0-nucl.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/marco/STM32CubeIDE/workspace_1.19.0/project-0-nucl/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project-0-nucl.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+project-0-nucl.elf project-0-nucl.map: $(OBJS) $(USER_OBJS) /home/marco/Documents/project-0/project-0-nucl/STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "project-0-nucl.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/marco/Documents/project-0/project-0-nucl/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="project-0-nucl.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
