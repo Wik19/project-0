@@ -1,0 +1,11 @@
+../Core/Src/main.c:101:10:map_angle_to_pulse	3
+../Core/Src/main.c:114:6:parse_servo_command	7
+../Core/Src/main.c:142:6:HAL_UART_RxCpltCallback	5
+../Core/Src/main.c:161:5:main	5
+../Core/Src/main.c:245:6:SystemClock_Config	4
+../Core/Src/main.c:303:13:MX_ETH_Init	2
+../Core/Src/main.c:352:13:MX_TIM5_Init	7
+../Core/Src/main.c:415:13:MX_USART3_UART_Init	2
+../Core/Src/main.c:450:13:MX_USB_OTG_FS_PCD_Init	2
+../Core/Src/main.c:485:13:MX_GPIO_Init	1
+../Core/Src/main.c:553:6:Error_Handler	1
